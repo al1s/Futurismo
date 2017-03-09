@@ -1,0 +1,84 @@
+/*------- CSS Main start -------*/
+/*------- note.css -------*/
+.note {
+  width: 70%;
+  margin: 6vw auto;
+}
+.note__text {
+  margin: -1.2vw 0 -2.5vw;
+  text-align: center;
+  font-family: Battling;
+  font-size: 8vw;
+  text-transform: uppercase;
+  color: #3C4468;
+}
+.note__text_spacing-1st-line {
+  letter-spacing: 0.41em;
+}
+.note__text_spacing-2nd-line {
+  letter-spacing: 0.2em;
+}
+.note__text_spacing-3d-line {
+  letter-spacing: 0.15em;
+}
+.note__text_spacing-4th-line {
+  letter-spacing: 0.1978em;
+}
+.note__ruler {
+  background-color: #3C4468;
+  border: 0px;
+  width: 100%;
+  height: 2.5vw;
+}
+.note__text-super {
+  margin: 0 0 0 -0.5em;
+  vertical-align: 1.2em;
+  font-size: 0.4em;
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+}
+
+.decoration {
+  display: flex;
+  justify-content: space-between;
+}
+.decoration__vertical-bar {
+  flex: 0 0 2.6vw;
+  margin: 0.3vw 0;
+  height: 7.0vw;
+  background-color: #3C4468;
+}
+.decoration__circle {
+  flex: 0 0 3.4em;
+  height: 3.4em;
+  border-radius: 50%;
+  background-color: #3C4468;
+}
+.decoration__empty-placeholder{}
+/*------- CSS Main end  -------*/
+
+/** {
+  border: 1px solid red;
+}
+*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #A1A990;
+}
+/*------- CSS Reset start -------*/
+body, div, p, hr {
+  margin: 0;
+  padding: 0;
+}
+/*------- CSS Reset end -------*/
+
+@font-face {
+  font-family: 'Battling';
+  src: url("http://labs.jensimmons.com/2016/examples/fonts/Battling1NPmed.otf") format("opentype"); 
+}
