@@ -37,7 +37,17 @@
   text-decoration: underline;
   letter-spacing: 0.01em;
 }
+.note__copyright, 
+.note__copyright>a:link, 
+.note__copyright>a:visited {
+  margin: -1.2vw 0 -2.5vw;
+  text-align: center;
+  font-family: Battling;
+  font-size: 3vw;
+  color: #3C4468;
+}
 
+/*------- decoration.css -------*/
 .decoration {
   display: flex;
   justify-content: space-between;
@@ -49,8 +59,8 @@
   background-color: #3C4468;
 }
 .decoration__circle {
-  flex: 0 0 3.4em;
-  height: 3.4em;
+  flex: 0 0 3.4vw;
+  height: 3.4vw;
   border-radius: 50%;
   background-color: #3C4468;
 }
