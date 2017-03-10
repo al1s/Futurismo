@@ -80,5 +80,5 @@ body, div, p, hr {
 
 @font-face {
   font-family: 'Battling';
-  src: url("https://labs.jensimmons.com/2016/examples/fonts/Battling1NPmed.otf") format("opentype"); 
+  src: url("Battling1NPmed.otf") format("opentype"); 
 }
