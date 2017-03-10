@@ -2,42 +2,46 @@
 /*------- note.css -------*/
 .note {
   width: 70%;
-  margin: 6vw auto;
+  margin: 4vw auto;
 }
 .note__text {
-  margin: -1.2vw 0 -2.5vw;
+  margin: -2.333vw 0 -3.667vw;
   text-align: center;
   font-family: Battling;
-  font-size: 8vw;
+  font-size: 11.167vw;
   text-transform: uppercase;
   color: #3C4468;
 }
 .note__text_spacing-1st-line {
-  letter-spacing: 0.41em;
+  letter-spacing: 0.1em;
 }
 .note__text_spacing-2nd-line {
-  letter-spacing: 0.2em;
+  letter-spacing: -0.075em;
+  word-spacing: 0.14em;
 }
 .note__text_spacing-3d-line {
-  letter-spacing: 0.15em;
+  letter-spacing: -0.03em;
+  word-spacing: 0.07em;
 }
 .note__text_spacing-4th-line {
-  letter-spacing: 0.1978em;
-}
-.note__ruler {
-  background-color: #3C4468;
-  border: 0px;
-  width: 100%;
-  height: 2.5vw;
+  letter-spacing: -0.02em;
+  word-spacing: 0.07em;
 }
 .note__text-super {
-  margin: 0 0 0 -0.5em;
+  margin: 0 0 0 0.1em;
   vertical-align: 1.2em;
   font-size: 0.4em;
   text-decoration: underline;
   letter-spacing: 0.01em;
 }
+.note__ruler {
+  background-color: #3C4468;
+  border: 0px;
+  width: 100%;
+  height: 4.33vw;
+}
 .note__copyright, 
+.note__copyright>a, 
 .note__copyright>a:link, 
 .note__copyright>a:visited {
   margin: -1.2vw 0 -2.5vw;
@@ -46,6 +50,30 @@
   font-size: 3vw;
   color: #3C4468;
 }
+/*------- decoration.css -------*/
+.decoration {
+  display: flex;
+  justify-content: space-between;
+}
+.decoration__vertical-bar {
+  flex: 0 0 4.167vw;
+  height: 24.333vw;
+  background-color: #3C4468;
+}
+.decoration__circle-top {
+  flex: 0 0 9.167vw;
+  height: 9.167vw;
+  border-radius: 50%;
+  background-color: #3C4468;
+}
+.decoration__circle-bottom {
+  flex: 0 0 9.167vw;
+  height: 9.167vw;
+  border-radius: 50%;
+  background-color: #3C4468;
+  align-self: flex-end;
+  }
+.decoration__empty-placeholder{}
 
 /*------- footer.css -------*/
 .footer {
@@ -60,31 +88,41 @@
   border-radius: 50%;
   background-color: #3C4468;
   font-size: 0.8em;
+  font-family: Battling;
+  text-decoration: none;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 .footer__link:link, .footer__link:visited {
   color: #A1A990;
 }
 
-/*------- decoration.css -------*/
-.decoration {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 600px) {
+  .note {
+    margin: 30px auto;
+    width: 420px;
+  }
+  .note__text {
+    margin: -14px 0 -22px;
+    font-size: 67px;
+    text-align: left;
+  }
+  .note__ruler {
+    height: 26px;
+  }
+  .decoration__vertical-bar {
+    flex: 0 0 25px;
+    height: 146px;
+  }
+  .decoration__circle-top {
+    flex: 0 0 55px;
+    height: 55px;
+  }
+  .decoration__circle-bottom {
+    flex: 0 0 55px;
+    height: 55px;
+  }
 }
-.decoration__vertical-bar {
-  flex: 0 0 2.6vw;
-  margin: 0.3vw 0;
-  height: 7.0vw;
-  background-color: #3C4468;
-}
-.decoration__circle {
-  flex: 0 0 3.4vw;
-  height: 3.4vw;
-  border-radius: 50%;
-  background-color: #3C4468;
-}
-.decoration__empty-placeholder{}
 /*------- CSS Main end  -------*/
 
 /** {
@@ -100,6 +138,11 @@ html {
 }
 body {
   background-color: #A1A990;
+/*  background-image: url("https://d35fkdjhhgt99.cloudfront.net/static/use-media-items/32/31824/full-1134x1394/56701ccf/trentino_1932.png?resolution=0");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 600px;*/
 }
 /*------- CSS Reset start -------*/
 body, div, p, hr {
@@ -110,5 +153,6 @@ body, div, p, hr {
 
 @font-face {
   font-family: 'Battling';
-  src: url("Battling1NPmed.otf") format("opentype"); 
+  src: url("Battling1NPmed.otf") format("opentype");
 }
+
