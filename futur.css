@@ -5,35 +5,56 @@
   margin: 4vw auto;
 }
 .note__text {
-  margin: -2.333vw 0 -3.667vw;
+  margin: -1vw 0 -2vw;
   text-align: center;
-  font-family: Battling;
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: 900;
   font-size: 11.167vw;
   text-transform: uppercase;
   color: #3C4468;
 }
-.note__text_spacing-1st-line {
-  letter-spacing: 0.1em;
+/*.note__text_spacing-1st-line {
+    letter-spacing: 0.1em;
 }
 .note__text_spacing-2nd-line {
-  letter-spacing: -0.075em;
-  word-spacing: 0.14em;
+  letter-spacing: 0.19em;
 }
 .note__text_spacing-3d-line {
-  letter-spacing: -0.03em;
-  word-spacing: 0.07em;
+  letter-spacing: 0.15em;
 }
 .note__text_spacing-4th-line {
-  letter-spacing: -0.02em;
-  word-spacing: 0.07em;
+  letter-spacing: 0.1978em;
 }
 .note__text-super {
-  margin: 0 0 0 0.1em;
+  margin: 0 0 0 -0.5em;
   vertical-align: 1.2em;
   font-size: 0.4em;
   text-decoration: underline;
   letter-spacing: 0.01em;
-}
+}*/
+  .note__text_spacing-1st-line {
+    letter-spacing: 0.05em;
+  }
+  .note__text_spacing-2nd-line {
+    letter-spacing: -0.07em;
+    word-spacing: 0.14em;
+  }
+  .note__text_spacing-3d-line {
+    letter-spacing: -0.09em;
+    word-spacing: -0.1em;
+  }
+  .note__text_spacing-4th-line {
+    letter-spacing: -0.1em;
+    word-spacing: 0.07em;
+  }
+  .note__text-super {
+    margin: 0 0 0 0.1em;
+    vertical-align: 1.2em;
+    font-size: 0.4em;
+    text-decoration: underline;
+    letter-spacing: 0.01em;
+  }
+
 .note__ruler {
   background-color: #3C4468;
   border: 0px;
@@ -46,7 +67,7 @@
 .note__copyright>a:visited {
   margin: -1.2vw 0 -2.5vw;
   text-align: center;
-  font-family: Battling;
+  font-family: 'Reem Kufi', sans-serif;
   font-size: 3vw;
   color: #3C4468;
 }
@@ -88,7 +109,7 @@
   border-radius: 50%;
   background-color: #3C4468;
   font-size: 0.8em;
-  font-family: Battling;
+  font-family: 'Reem Kufi', sans-serif;
   text-decoration: none;
   text-align: center;
   vertical-align: baseline;
@@ -103,7 +124,7 @@
     width: 420px;
   }
   .note__text {
-    margin: -14px 0 -22px;
+    margin: -7px 0 -12px;
     font-size: 67px;
     text-align: left;
   }
@@ -150,9 +171,13 @@ body, div, p, hr {
   padding: 0;
 }
 /*------- CSS Reset end -------*/
-
 @font-face {
-  font-family: 'Battling';
-  src: url("Battling1NPmed.otf") format("opentype");
+  font-family: 'Reem Kufi', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Reem+Kufi"); 
 }
 
+/*
+ * @font-face {
+ * font-family: 'Battling';
+ * src: url("Battling1NPmed.otf") format("opentype");
+*/
